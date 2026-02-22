@@ -3,138 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🏞️ Encontro Anual Andarilho</title>
+  <title> 👽 Encontro Anual Andarilho</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --color-bg: #e1f7f5;
-      --color-primary: #027373;
-      --color-secondary: #044e54;
-      --color-card-bg: #ffffff;
-      --color-text: #0b1e24;
-      --color-accent: #00b4d8;
-      --radius: 18px;
-      --shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-    }
+ <style>
+  :root {
+    --color-bg: #f4efe6; /* areia clara */
+    --color-primary: #8c4a2f; /* terra avermelhada */
+    --color-secondary: #4e3b2b; /* marrom cerrado */
+    --color-card-bg: #ffffff;
+    --color-text: #2a1f16;
+    --color-accent: #d9a441; /* dourado pôr do sol */
+    --radius: 18px;
+    --shadow: 0 14px 32px rgba(78, 59, 43, 0.15);
+  }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--color-bg);
-      color: var(--color-text);
-      line-height: 1.6;
-      padding: 30px;
-    }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #f4efe6, #e6dccb);
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: 30px;
+  }
 
-    .container {
-      max-width: 1280px;
-      margin: auto;
-    }
+  .container {
+    max-width: 1280px;
+    margin: auto;
+  }
 
-    .header {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 50px;
-    }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 
+  .header h1 {
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .header p {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    margin-top: 8px;
+  }
+
+  .header img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+  }
+
+  .intro {
+    background: linear-gradient(to right, #e6dccb, #f7d9a8);
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+    border-left: 6px solid var(--color-accent);
+  }
+
+  .intro h2 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--color-secondary);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .card {
+    background: var(--color-card-bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--color-primary);
+  }
+
+  .card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(78, 59, 43, 0.25);
+  }
+
+  .card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    filter: saturate(1.1) contrast(1.05);
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+  }
+
+  .card-content p {
+    margin-bottom: 10px;
+    color: #3b2a1f;
+    font-size: 0.95rem;
+  }
+
+  .footer-img {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
     .header h1 {
-      font-size: 3rem;
-      color: var(--color-primary);
-      font-weight: 800;
+      font-size: 2rem;
     }
-
-    .header p {
-      font-size: 1rem;
-      color: var(--color-secondary);
-      margin-top: 8px;
-    }
-
-    .header img {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-      box-shadow: var(--shadow);
-    }
-
-    .intro {
-      background: linear-gradient(to right, #cbf3f0, #a4f7f1);
-      padding: 24px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 40px;
-    }
-
-    .intro h2 {
-      font-size: 1.8rem;
-      color: var(--color-primary);
-      margin-bottom: 10px;
-    }
-
-    .intro p {
-      font-size: 1.1rem;
-      font-style: italic;
-      color: var(--color-secondary);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: var(--color-card-bg);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px) scale(1.02);
-    }
-
-    .card img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card-content h3 {
-      color: var(--color-primary);
-      margin-bottom: 8px;
-      font-size: 1.4rem;
-    }
-
-    .card-content p {
-      margin-bottom: 10px;
-      color: #333;
-      font-size: 0.95rem;
-    }
-
-    .footer-img {
-      margin-top: 60px;
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      .header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <!-- Substitua o conteúdo do <body> do seu HTML original por este -->
 
@@ -221,3 +226,4 @@
 </body>
 
 </html>
+
