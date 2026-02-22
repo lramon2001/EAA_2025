@@ -3,228 +3,224 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> 👽 Encontro Anual Andarilho</title>
+  <title>👽 Encontro Anual Andarilho</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
- <style>
-  :root {
-    --color-bg: #f4efe6; /* areia clara */
-    --color-primary: #8c4a2f; /* terra avermelhada */
-    --color-secondary: #4e3b2b; /* marrom cerrado */
-    --color-card-bg: #ffffff;
-    --color-text: #2a1f16;
-    --color-accent: #d9a441; /* dourado pôr do sol */
-    --radius: 18px;
-    --shadow: 0 14px 32px rgba(78, 59, 43, 0.15);
-  }
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(to bottom, #f4efe6, #e6dccb);
-    color: var(--color-text);
-    line-height: 1.6;
-    padding: 30px;
-  }
-
-  .container {
-    max-width: 1280px;
-    margin: auto;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-
-  .header h1 {
-    font-size: 3rem;
-    color: var(--color-primary);
-    font-weight: 800;
-    letter-spacing: 1px;
-  }
-
-  .header p {
-    font-size: 1rem;
-    color: var(--color-secondary);
-    margin-top: 8px;
-  }
-
-  .header img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: var(--shadow);
-  }
-
-  .intro {
-    background: linear-gradient(to right, #e6dccb, #f7d9a8);
-    padding: 24px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    margin-bottom: 40px;
-    border-left: 6px solid var(--color-accent);
-  }
-
-  .intro h2 {
-    font-size: 1.8rem;
-    color: var(--color-primary);
-    margin-bottom: 10px;
-  }
-
-  .intro p {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--color-secondary);
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-  }
-
-  .card {
-    background: var(--color-card-bg);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: all 0.3s ease;
-    border-top: 4px solid var(--color-primary);
-  }
-
-  .card:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 18px 40px rgba(78, 59, 43, 0.25);
-  }
-
-  .card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    filter: saturate(1.1) contrast(1.05);
-  }
-
-  .card-content {
-    padding: 20px;
-  }
-
-  .card-content h3 {
-    color: var(--color-primary);
-    margin-bottom: 8px;
-    font-size: 1.4rem;
-  }
-
-  .card-content p {
-    margin-bottom: 10px;
-    color: #3b2a1f;
-    font-size: 0.95rem;
-  }
-
-  .footer-img {
-    margin-top: 60px;
-    text-align: center;
-  }
-
-  @media (max-width: 600px) {
-    .header h1 {
-      font-size: 2rem;
+  <style>
+    :root {
+      --color-bg: #f4efe6; /* areia clara */
+      --color-primary: #8c4a2f; /* terra avermelhada */
+      --color-secondary: #4e3b2b; /* marrom cerrado */
+      --color-card-bg: #ffffff;
+      --color-text: #2a1f16;
+      --color-accent: #d9a441; /* dourado pôr do sol */
+      --radius: 18px;
+      --shadow: 0 14px 32px rgba(78, 59, 43, 0.15);
     }
-  }
-</style>
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #f4efe6, #e6dccb);
+      color: var(--color-text);
+      line-height: 1.6;
+      padding: 30px;
+    }
+
+    .container { max-width: 1280px; margin: auto; }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 50px;
+      gap: 18px;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: var(--color-primary);
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .header p {
+      font-size: 1rem;
+      color: var(--color-secondary);
+      margin-top: 8px;
+      max-width: 780px;
+    }
+
+    .header img {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: var(--shadow);
+    }
+
+    .intro {
+      background: linear-gradient(to right, #e6dccb, #f7d9a8);
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 40px;
+      border-left: 6px solid var(--color-accent);
+    }
+
+    .intro h2 {
+      font-size: 1.8rem;
+      color: var(--color-primary);
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--color-secondary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--color-card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      border-top: 4px solid var(--color-primary);
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 18px 40px rgba(78, 59, 43, 0.25);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      filter: saturate(1.1) contrast(1.05);
+    }
+
+    .card-content { padding: 20px; }
+
+    .card-content h3 {
+      color: var(--color-primary);
+      margin-bottom: 8px;
+      font-size: 1.4rem;
+    }
+
+    .card-content p {
+      margin-bottom: 10px;
+      color: #3b2a1f;
+      font-size: 0.95rem;
+    }
+
+    .card-content a {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(140, 74, 47, 0.45);
+    }
+    .card-content a:hover { opacity: 0.85; }
+
+    .footer-img { margin-top: 60px; text-align: center; }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 2rem; }
+    }
+  </style>
 </head>
-<!-- Substitua o conteúdo do <body> do seu HTML original por este -->
 
 <body>
   <div class="container">
     <div class="header">
       <div>
         <h1>Encontro Anual Andarilho (EAA)</h1>
-        <p> 🌄 Vamos acelerar juntos para mais um encontro anual da família Andarilho, celebrando a união em meio ao cerrado, às trilhas e aos céus dourados do Planalto Central.</p>
+        <p>🌄 Rumo à Chapada dos Veadeiros! Vamos celebrar a vida e a união da família Andarilho em meio ao cerrado, cachoeiras e horizontes sem fim.</p>
       </div>
       <img src="https://github.com/lramon2001/EAA_2025/blob/main/andarilho.jpg?raw=true" alt="Logo Andarilho" />
     </div>
 
     <div class="intro">
-      <h2>👽 Chapada dos veadeiros - Edição 2026</h2>
-      <p>Confira abaixo a agenda completa do nosso encontro.</p>
+      <h2>👽 Chapada dos Veadeiros — Edição 2026 (01 a 03 de maio)</h2>
+      <p>Confira abaixo a programação (esboço) do nosso encontro. Se organizar direitinho, todo mundo curte! 🏍️🔥</p>
     </div>
 
     <div class="grid">
 
-      <!-- 19/jun - Quinta -->
+      <!-- INFO GERAL / HOSPEDAGEM -->
       <div class="card">
-        <img src="https://github.com/lramon2001/EAA_2025/blob/main/estancia_jackeline.jpg?raw=true" alt="Estância Jackeline">
+        <img src="https://source.unsplash.com/1200x800/?chapada,dos,veadeiros,cerrado" alt="Chapada dos Veadeiros">
         <div class="card-content">
-          <h3>📅 19/jun – Quinta-feira</h3>
-          <p>🕠 Saída conforme o combinado com seu bonde. </p>
-          <p>🏡 Chegada na Pousada Estância Jackeline (Onde ficaremos Hospedados)</p>
-          <p>🍤 Dia livre com refeições, porções e riozinho top para confraternizar até os 🐸 darem o ar da graça!</p>
+          <h3>🏨 Hospedagem & Regras do Hotel</h3>
+          <p>📍 Ficaremos no <strong>Chapada Hotel</strong>.</p>
+          <p>🎒 Pode levar <strong>cooler com bebidas</strong>. Área de convivência liberada até <strong>22:00</strong>.</p>
+          <p>🚫 <strong>Sem vidros</strong> (garrafas ou taças) na área da piscina.</p>
+          <p>💰 Diária: <strong>R$ 413,00</strong> (casal ou duplo solteiro).</p>
+          <p>🧾 Membro pagante: hotel custeado em <strong>50%</strong>. Não-membro: <strong>100%</strong> (com sinal de 50%).</p>
+          <p>▶️ Vídeo do hotel: <a href="https://youtu.be/Q9FdURGAjhI?si=QTj_Nv8WwZ7rNxI3" target="_blank" rel="noopener noreferrer">assistir</a></p>
         </div>
       </div>
 
-      <!-- 20/jun - Sexta -->
+      <!-- 01/mai - Sexta -->
       <div class="card">
-        <img src="https://github.com/lramon2001/EAA_2025/blob/main/praia_do_puca.jpg?raw=true" alt="Praia do Puçá">
+        <img src="https://source.unsplash.com/1200x800/?road,motorcycle,travel" alt="Estrada">
         <div class="card-content">
-          <h3>📅 20/jun – Sexta-feira</h3>
-          <p>🏖️ Praia do Puçá – dia inteiro</p>
-          <p>🚗 Deslocamento de 6km por estrada de terra (tranquila)</p>
-          <p>💸 Valores no folder </p>
+          <h3>📅 01/mai/2026 — Sexta-feira</h3>
+          <p>🕡 <strong>Saída 06:30</strong> do Posto Shell:
+            <a href="https://maps.app.goo.gl/ucVx5yRBUr593uGh7" target="_blank" rel="noopener noreferrer">abrir no mapa</a>
+          </p>
+          <p>☕ Café da manhã na Vó Belmira:
+            <a href="https://maps.app.goo.gl/bLEz3BuoLvBA4kcD7" target="_blank" rel="noopener noreferrer">abrir no mapa</a>
+          </p>
+          <p>🏁 Check-in no <strong>Chapada Hotel</strong></p>
+          <p>🍽️ Almoço: <em>a definir</em></p>
+          <p>🌅 Pôr do sol na <strong>Villa Annapurna</strong>:
+            <a href="https://www.instagram.com/villa_annapurna?igsh=eDl2Zm90bXM1amd0" target="_blank" rel="noopener noreferrer">@villa_annapurna</a>
+          </p>
+          <p>🎉 Noite de confraternização na área da piscina do hotel</p>
         </div>
       </div>
 
-      <!-- 21/jun - Sábado (dia) -->
+      <!-- 02/mai - Sábado -->
       <div class="card">
-        <img src="https://github.com/lramon2001/EAA_2025/blob/main/rio_azuis.jpg?raw=true" alt="Rio Azuis">
+        <img src="https://source.unsplash.com/1200x800/?waterfall,cerrado,chapada" alt="Cachoeira na Chapada">
         <div class="card-content">
-          <h3>📅 21/jun – Sábado (dia)</h3>
-          <p>🏞️ Vila do Rio Azuis</p>
-          <p>🍽️ Almoço e base no Restaurante Agenda 21</p>
-          <p>✅ Acesso à vila: pago pelo Andarilho</p>
-          <p>💧 Acesso à nascente do rio será por dentro do rio</p>
-          <p>🍛 Almoço por conta do Andarilho! 🎉</p>
+          <h3>📅 02/mai/2026 — Sábado</h3>
+          <p>💦 Dia de cachoeira</p>
+          <p>🍛 Almoço típico no <strong>Valle das Pedras</strong> <em>(a confirmar)</em></p>
+          <p>🏨 Retorno ao hotel</p>
+          <p>🥩🔥 Preparar nosso <strong>Churrasco</strong> pra fechar o dia do jeito certo</p>
         </div>
       </div>
 
-      <!-- 21/jun - Sábado à noite -->
+      <!-- 03/mai - Domingo -->
       <div class="card">
-        <img src="https://github.com/lramon2001/EAA_2025/blob/main/estancia_jackeline.jpg?raw=true" alt="Festa Junina">
+        <img src="https://source.unsplash.com/1200x800/?sunset,mountains,chapada" alt="Pôr do sol na Chapada">
         <div class="card-content">
-          <h3>🎉 21/jun – Sábado à noite</h3>
-          <p>🌽 Festa Junina na Estância Jackeline</p>
-          <p>🤠 Traga sua saia rodada e seu chapéu de palha — vai ter quadrilha!</p>
+          <h3>📅 03/mai/2026 — Domingo</h3>
+          <p>🥐 Café da manhã no hotel</p>
+          <p>🗺️ Dia livre</p>
+          <p>🛣️ Retorno pra quem trabalha</p>
+          <p>😎 Para os aposentados e organizados: aproveitar mais atrativos do mapa do rolê</p>
         </div>
       </div>
 
-      <!-- 22/jun - Domingo -->
-      <div class="card">
-        <img src=https://github.com/lramon2001/EAA_2025/blob/main/estrada_2.jpg?raw=true" alt="Volta para casa">
-        <div class="card-content">
-          <h3>📅 22/jun – Domingo</h3>
-          <p>🛣️ Hora de voltar pra casa...</p>
-          <p>🏠 Ao chegar em casa, avise no grupo que chegou bem e mande um zap para Villas no pv reclamando de tudo que não gostou.</p>
-          <p>🌍 Em 2026 a gente repete a festa em outro lugar.  </p>
-        </div>
-      </div>
     </div>
 
     <div class="footer-img">
-      <p style="text-align: center; font-size: 1.3rem; font-weight: 600; color: #044e54; margin-top: 40px;">
-        🔥🏍️ Pro dia nascer feliz… e o pôr do sol ser na Chapada! 🌄⚡
+      <p style="text-align: center; font-size: 1.3rem; font-weight: 600; color: var(--color-secondary); margin-top: 40px;">
+        🏍️🔥 “Será a estrada uma prisão?” — Pra gente é liberdade rumo à Chapada! 🌄🛣️
       </p>
     </div>
   </div>
 </body>
-
 </html>
-
-
